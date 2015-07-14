@@ -1,2 +1,23 @@
-<h1>Puppies#show</h1>
-<p>Find me in app/views/puppies/show.html.erb</p>
+<h1>Show Puppy</h1>
+
+    <p>
+        <img src="<%= @puppy.image %>">
+    </p>
+
+    <p>
+        Name: <%= @puppy.name %>
+    </p>
+    
+    <p>
+        Bio: <%= @puppy.bio%>
+    </p>
+
+    <p>
+        Age: <%= @puppy.age%>
+    </p>
+
+    <p>
+        Breed: <%= @puppy.breed%>
+    </p>
+
+<%= link_to "Delete Puppy", @puppy, method: :delete%>
